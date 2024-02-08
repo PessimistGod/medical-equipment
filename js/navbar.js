@@ -8,7 +8,7 @@ navbar.innerHTML = `
 
         </div>
 
-        <div>
+        <div class="nav-right-icon-position">
             <div class="nav-menu-icon" id="nav-menu-gif" onclick="toggleMenu('nav-menu-gif')">
                 <div class="static-menu-gif"></div>
                 <div class="animated-menu-gif"></div>
@@ -26,11 +26,13 @@ navbar.innerHTML = `
 <div class="navbar-body" id="nav-content-body">
     <div id="nav-animated-content">
         <ul>
-            <a href=""><li><img class="navbar-content-icons" src="../assets/Icons/Icons/hospital.png" alt="" />Home</li></a>
-            <a href=""><li><img class="navbar-content-icons" src="../assets/Icons/Icons/receptionist.png" alt="" />About</li></a>
-            <a href=""><li><img class="navbar-content-icons" src="../assets/Icons/Icons/medical-team.png" alt="" />Team</li></a>
-            <a href=""><li><img class="navbar-content-icons" src="../assets/Icons/Icons/medical-equipment.png" alt="" />Product</li></a>
-            <a href=""><li><img class="navbar-content-icons" src="../assets/Icons/Icons/hospital-phone.png" alt="" />Contact</li></a>
+            <a href="#HomeSAL"><li><img class="navbar-content-icons" src="../assets/Icons/Icons/hospital.png" alt="" />Home</li></a>
+            <a href="#AboutSAL"><li><img class="navbar-content-icons" src="../assets/Icons/Icons/receptionist.png" alt="" />About</li></a>
+            <a href="#TeamSAL"><li><img class="navbar-content-icons" src="../assets/Icons/Icons/medical-team.png" alt="" />Team</li></a>
+            <a href="#ProductSAL"><li><img class="navbar-content-icons" src="../assets/Icons/Icons/medical-equipment.png" alt="" />Product</li></a>
+            <a href="#GallerySAL" style="display:flex;"><li><img class="navbar-content-icons" src="../assets/Icons/Icons/image-gallery.png" alt="" />Gallery</li></a>
+            <a href="#ContactSAL" style="display:flex;"><li><img class="navbar-content-icons" src="../assets/Icons/Icons/hospital-phone.png" alt="" />Contact</li></a>
+            
         </ul>
     </div>
 </div>
