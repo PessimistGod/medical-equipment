@@ -10,6 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/videoPlaying.css">
     <meta name="msapplication-TileColor" content="#080B14">
@@ -18,12 +19,15 @@
     
 
 </head>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
             document.getElementById("loadingPage").style.display = "none";
-
-        }, 1500); 
+            AOS.init();
+        }, 2000); 
     });
 </script>
 <body>
@@ -82,10 +86,10 @@
        <section class="top_slider" id="HomeSAL">
            <div class="slider_wrap" id="main_slider">
                <div class="slide" data-color="#FF5100" data-color-type="dark">
-                   <div class="left" style="background-image: url(img/m_slide_1.jpg)">
+                   <div class="left ripple-trigger" style="background-image: url(img/m_slide_1.jpg)">
                        <div class="slide_content">
                            <div>
-                               <h2 class="_title">
+                               <h2 class="_title"  >
                                 Empowering Healthcare Excellence in Dubai
                                </h2>
                                <p class="_subtitle">
@@ -104,7 +108,7 @@
                        </div>
                        <div class="right_bottom">
                            <a class="js-video" data-href="#video">
-                            <iframe width="100%" height="245" src="https://www.youtube.com/embed/DK8AamdYcy4" title="Innovating Healthcare with State of the Art Technology | BASS Medical Group | :30 Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="iframe_yotube_size" src="https://www.youtube.com/embed/DK8AamdYcy4" title="Innovating Healthcare with State of the Art Technology | BASS Medical Group | :30 Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                            </a>
 
                           
@@ -112,7 +116,7 @@
                    </div>
                </div>
                <div class="slide" data-color="#FF4F58" data-color-type="dark">
-                   <div class="left" style="background-image: url(img/slide_2.jpg)">
+                   <div class="left ripple-trigger" style="background-image: url(img/slide_2.jpg)">
                        <div class="slide_content">
                            <div>
                                <h2 class="_title">
@@ -133,14 +137,14 @@
                        </div>
                        <div class="right_bottom">
                            <a class="js-video" data-href="#video">
-                            <iframe  width="100%" height="450"  src="https://www.youtube.com/embed/nDgKGo7B-lE" title="Improving Patient Experience Means Reducing Suffering | Deirdre Mylod | TEDxWilmingtonSalon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe  class="iframe_yotube_size"  src="https://www.youtube.com/embed/nDgKGo7B-lE" title="Improving Patient Experience Means Reducing Suffering | Deirdre Mylod | TEDxWilmingtonSalon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                            </a>
                           
                        </div>
                    </div>
                </div>
                <div class="slide" data-color="#7749FF" data-color-type="dark">
-                   <div class="left" style="background-image: url(img/slide_3.jpg)">
+                   <div class="left ripple-trigger" style="background-image: url(img/slide_3.jpg)">
                        <div class="slide_content">
                            <div>
                                <h2 class="_title">
@@ -161,7 +165,7 @@
                        </div>
                        <div class="right_bottom">
                         <a class="js-video" data-href="#video">
-                         <iframe  width="100%" height="450" src="https://www.youtube.com/embed/edE21TMq6iY" title="Medical Equipment Training | Biomedical Equipment Technology" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                         <iframe  class="iframe_yotube_size" src="https://www.youtube.com/embed/edE21TMq6iY" title="Medical Equipment Training | Biomedical Equipment Technology" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </a>
                        
                     </div>
@@ -190,7 +194,10 @@
        <section class="about_section margin-top-main-page" id="AboutSAL">
         <div class="wrap">
             <div class="wrap_float">
-                <h1 class="page_title">About Us</h1>
+                <h1 class="page_title" data-aos="fade-right" data-aos-duration="600"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false">About Us</h1>
                 <div class="slider">
                      <div class="slide ie-img">
                          <img src="img/class_1.jpg" alt="">
@@ -208,7 +215,7 @@
                          <img src="img/class_5.jpg" alt="">
                      </div>
                  </div>
-                 <div class="about-text">
+                 <div class="about-text" data-aos="zoom-in-right" data-aos-mirror="true" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="false">
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni quae doloremque esse dignissimos voluptatibus quia aliquam excepturi illum maiores incidunt nihil similique vel veritatis, ad, rerum nulla, est dolorem numquam eaque nisi. Perferendis recusandae, odio maxime beatae, eaque quibusdam quos consectetur atque quidem consequatur distinctio a exercitationem suscipit laborum?
                  </div>
             </div>
@@ -487,6 +494,7 @@
             <li><img onclick="videoUrl('./assets/video/1.mp4')" src="./assets/images/1.png" alt=""></li>
             <li><img onclick="videoUrl('./assets/video/2.mp4')" src="./assets/images/2.png" alt=""></li>
             <li><img onclick="videoUrl('./assets/video/3.mp4')" src="./assets/images/3.png" alt=""></li>
+            <!-- <li><img onclick="videoUrl('./assets/video/2.mp4')" src="./assets/images/2.png" alt=""></li> -->
             <!-- <li><img onclick="videoUrl('./assets/video/4.mp4')" src="./images/4.png" alt=""></li> -->
 
         </ul>
@@ -525,7 +533,7 @@
     
     
 
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/device.min.js"></script>
@@ -534,6 +542,8 @@
    <script src="js/slick.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
+
 
     <script>
         function videoUrl(url) {
@@ -548,6 +558,34 @@
             }, 1500); 
         });
     </script>
+
+<script>
+    // Wait for the DOM to be fully loaded
+    $(document).ready(function() {
+        // Initialize the ripple effect on image load
+        $('.ripple-trigger').ripples({
+            // Set options for the ripple effect
+            resolution: 512,
+            dropRadius: 20,
+            perturbance: 0.04,
+        });
+
+        // Trigger the ripple effect for 1 second when the image is loaded
+        $('.ripple-trigger').on('load', function() {
+            var $ripple = $(this);
+            // Start the ripple effect
+            $ripple.ripples('drop', $ripple.width() / 2, $ripple.height() / 2, 20, 0.04);
+            // Stop the ripple effect after 1 second
+            setTimeout(function() {
+                $ripple.ripples('destroy');
+            }, 600);
+        });
+    });
+</script>
+
+
+
+
 </body>
 
 </html>

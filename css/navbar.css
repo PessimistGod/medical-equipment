@@ -180,3 +180,23 @@
     margin-top: 85px;
 }
 
+.iframe_yotube_size{
+    width: 100%;
+    height: 60vh;
+}
+
+
+@media screen and (max-width: 1000px){
+    .iframe_yotube_size{
+    width: 100%;
+    height: 40vh;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .iframe_yotube_size{
+    width: 100%;
+    height: 30vh;
+    }
+}
+
