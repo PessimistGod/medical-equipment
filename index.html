@@ -13,12 +13,25 @@
     <meta name="msapplication-TileColor" content="#080B14">
     <meta name="theme-color" content="#080B14">
 
+    
+
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            document.getElementById("loadingPage").style.display = "none";
+
+        }, 1500); 
+    });
+</script>
 <body>
  
 
     <div id="loadingPage" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; z-index: 9999;">
-        <iframe src="./loading.html" frameborder="0" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <img style="position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);" src="./assets/Icons/Animated Icons/loading.gif" alt="Loading...">
        
     </div>
 
