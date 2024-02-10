@@ -4355,7 +4355,7 @@ body.lg-on {
     display: none;
   }
   .top_slider .right .right_bottom {
-    width: 100%;
+    width: 150%;
     float: right;
   }
   .top_slider .left {
@@ -4368,11 +4368,11 @@ body.lg-on {
     width: 50vw;
   }
   .top_slider .arrows .arrow {
-    width: 25vw;
-    height: 25vw;
+    width: 12vw;
+    height: 12vw;
   }
   .top_slider .arrows .arrow.next {
-    left: 25vw;
+    left: 12vw;
   }
   .top_slider .left .slide_content {
     padding-bottom: 24vh;
@@ -4384,7 +4384,7 @@ body.lg-on {
     width: 42px;
     height: 42px;
     margin-top: -21px;
-    margin-left: -21px;
+    margin-left: -28px;
   }
   .top_slider .arrows .arrow {
     top: auto;

@@ -15,8 +15,54 @@
 
 </head>
 <body>
+ 
+
+    <div id="loadingPage" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; z-index: 9999;">
+        <iframe src="./loading.html" frameborder="0" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+       
+    </div>
+
+
+    <div id="navbar">
+
+        
+<header id="navbar-box">
+    <div class="flexBetween">
+        <div class="nav-logo">
+        <img class="nav-log-image" src="./assets/images/logo.jpeg" alt="" />    
+
+        </div>
+
+        <div class="nav-right-icon-position">
+            <div class="nav-menu-icon" id="nav-menu-gif" onclick="toggleMenu('nav-menu-gif')">
+                <div class="static-menu-gif"></div>
+                <div class="animated-menu-gif"></div>
+            </div>
     
-    <div id="navbar"></div>
+            <div class="nav-menu-icon" id="nav-cross-gif" onclick="toggleMenu('nav-cross-gif')">
+                <div class="static-cross-gif"></div>
+                <div class="animated-cross-gif"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="navbar-body" id="nav-content-body">
+    <div id="nav-animated-content">
+        <ul>
+            <a href="#HomeSAL"><li><img class="navbar-content-icons" src="./assets/Icons/Icons/hospital.png" alt="" />Home</li></a>
+            <a href="#AboutSAL"><li><img class="navbar-content-icons" src="./assets/Icons/Icons/receptionist.png" alt="" />About</li></a>
+            <a href="#TeamSAL"><li><img class="navbar-content-icons" src="./assets/Icons/Icons/medical-team.png" alt="" />Team</li></a>
+            <a href="#ProductSAL"><li><img class="navbar-content-icons" src="./assets/Icons/Icons/medical-equipment.png" alt="" />Product</li></a>
+            <a href="#GallerySAL" style="display:flex;"><li><img class="navbar-content-icons" src="./assets/Icons/Icons/image-gallery.png" alt="" />Gallery</li></a>
+            <a href="#ContactSAL" style="display:flex;"><li><img class="navbar-content-icons" src="./assets/Icons/Icons/hospital-phone.png" alt="" />Contact</li></a>
+            
+        </ul>
+    </div>
+</div>
+
+    </div>
        <div class="container margin-top-main-page about-page">
        <section class="top_slider" id="HomeSAL">
            <div class="slider_wrap" id="main_slider">
@@ -43,7 +89,7 @@
                        </div>
                        <div class="right_bottom">
                            <a class="js-video" data-href="#video">
-                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/DK8AamdYcy4" title="Innovating Healthcare with State of the Art Technology | BASS Medical Group | :30 Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="100%" height="245" src="https://www.youtube.com/embed/DK8AamdYcy4" title="Innovating Healthcare with State of the Art Technology | BASS Medical Group | :30 Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                            </a>
 
                           
@@ -462,6 +508,7 @@
 
     </div>
     
+    
 
     
     <script src="js/jquery.min.js"></script>
@@ -477,6 +524,14 @@
         function videoUrl(url) {
             document.getElementById("sliderVideoPlaying").src = url;
         }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById("loadingPage").style.display = "none";
+
+            }, 1500); 
+        });
     </script>
 </body>
 
